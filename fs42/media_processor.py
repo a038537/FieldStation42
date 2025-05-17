@@ -20,7 +20,7 @@ from fs42.schedule_hint import MonthHint, QuarterHint, RangeHint, BumpHint, DayP
 from fs42.catalog_entry import CatalogEntry
 
 class MediaProcessor:
-    supported_formats = ["mp4", "mpg", "mpeg", "avi", "mov", "mkv"]
+    supported_formats = ["mp4", "mpg", "mpeg", "avi", "mov", "mkv", "ts"]
 
     @staticmethod
     def _process_media(file_list, tag, hints=[]):
