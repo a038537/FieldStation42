@@ -23,6 +23,8 @@ from fs42.reception import (
     none_change_effect,
 )
 
+import fs42.overlays.monkey_infobar_hook  # noqa: F401
+
 
 logging.basicConfig(
     format="%(asctime)s %(levelname)s:%(name)s:%(message)s", level=logging.INFO
