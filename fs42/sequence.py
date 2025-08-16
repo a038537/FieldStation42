@@ -40,8 +40,10 @@ class NamedSequence:
 
         # explicitely sort them by file path for alpha-numeric ordering:
         self.episodes = sorted(self.episodes, key=lambda entry: entry.fpath)
-        self.start_index = math.floor(self.start_perc * (len(self.episodes)))
-        self.end_index = math.floor(self.end_perc * (len(self.episodes)))
+        self.start_index = math.floor(self.start_perc * len(self.episodes))
+        self.end_index = math.floor(self.end_perc * len(self.episodes))
 
     def get_series_length(self):
-        return len(self._episodes)
+        """Return the number of episodes in the sequence."""
+
+        return len(self.episodes)
